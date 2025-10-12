@@ -10,4 +10,36 @@
 
 ---
 
+## 🎯 Objectif
+
+Construire une API stateless (sans session côté serveur) où :
+- Un utilisateur peut s’inscrire (/api/auth/register)
+- Un utilisateur peut se connecter (/api/auth/login)
+- L’API renvoie un token JWT
+- Les routes privées (ex. /api/users/profile) ne sont accessibles que si le token est valide
+- Il y a des rôles (par exemple ROLE_USER, ROLE_ADMIN) pour gérer les autorisations.
+
+---
+
 ## Endpoints
+
+| Endpoint             | Méthode | Description                                  | Auth requise   |
+| -------------------- | ------- | -------------------------------------------- | -------------- |
+| `/api/auth/register` | `POST`  | Inscription d’un utilisateur                 | ❌              |
+| `/api/auth/login`    | `POST`  | Authentification, retourne un JWT            | ❌              |
+| `/api/users/profile` | `GET`   | Récupère le profil de l’utilisateur connecté | ✅              |
+| `/api/users/all`     | `GET`   | Liste des utilisateurs (admin seulement)     | ✅ (ROLE_ADMIN) |
+
+---
+
+## 🧱 Technologies principales
+
+| Catégorie                   | Outil / Lib                  |
+| --------------------------- | ---------------------------- |
+| **Framework**               | Spring Boot                  |
+| **Sécurité**                | Spring Security              |
+| **Authentification**        | JWT (JSON Web Token)         |
+| **Hashage de mot de passe** | BCrypt                       |
+| **ORM**                     | Spring Data JPA + PostgreSQL |
+| **Libs pratiques**          | Lombok                       |
+| **Test / Démo**             | Postman                      |
