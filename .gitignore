@@ -1,0 +1,53 @@
+# ==========================
+# Maven / Java
+# ==========================
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# ==========================
+# Logs
+# ==========================
+*.log
+logs/
+*.out
+
+# ==========================
+# IDEs
+# ==========================
+# VSCode
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+*.classpath
+*.project
+*.settings/
+
+# ==========================
+# Spring Boot
+# ==========================
+/spring-boot-app.properties
+/application.properties
+/application.yml
+
+# ==========================
+# OS Files
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Others
+# ==========================
+*.swp
+*.tmp
+*.bak
