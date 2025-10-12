@@ -1,6 +1,6 @@
 git add .
 git commit -m "
-    README
+    Générer le backend
     "
 git push github
 git push gitea
