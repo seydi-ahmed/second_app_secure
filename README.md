@@ -1,5 +1,4 @@
-# To Do List
-API REST d’authentification et de gestion d’utilisateurs, sécurisée avec Spring Security et JWT
+# API REST d’authentification et de gestion d’utilisateurs, sécurisée avec Spring Security et JWT
 
 ---
 
