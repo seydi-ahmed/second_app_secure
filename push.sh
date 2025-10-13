@@ -1,7 +1,6 @@
 git add .
 git commit -m "
-        entity/User.java
-        entity/Role.java
+        PassEncoder
     "
 git push github
 git push gitea
