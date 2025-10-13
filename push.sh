@@ -1,6 +1,7 @@
 git add .
 git commit -m "
-    Générer le backend
+        entity/User.java
+        entity/Role.java
     "
 git push github
 git push gitea
